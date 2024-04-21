@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - The Box Company</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html" class="logo">The Box Company</a>
+            <div id="loginBanner">
+                <a href="login.html">Login</a> | 
+                <a href="acctCreation.html">Create Account</a> | 
+                <a href="#" id="cartLink">Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Newly Released Boxes -->
+        <section class="boxes">
+            <h2>Newly Released Boxes</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="MysteryBox.jpg" alt="Box Name 1">
+                    <h3>The Mystery Box</h3>
+                    <p>Do you sometimes for get what you pack in your boxes? Well this box wont help you with remembering it any better, but It will let you know its contents remain a mystery!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+		    <p class="product-price">Price is $119.95</p>
+                </div>
+
+	   <div class="product">
+                    <img src="Cardboard.jpg" alt="Box Name 2">
+                    <h3>The Dilatant</h3>
+                    <p>This beautiful box has been hand crafted from our patented corrugated silk and tree pulp fibers by
+highly trained artisans who live deep in the forest. You’ll be the envy of movers and laborer’s
+everywhere, this one offer’s true elegance to all your moving and storage needs!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+		    <p class="product-price">Price is $19.95</p>
+                </div>
+
+          <div class="product">
+                    <img src="Lux.jpg" alt="Box Name 3">
+                    <h3>The Lux</h3>
+                    <p>If You are into that hip new “moving and storing” fad that’s so popular with the hipster kids today, well
+this is the box that will make you the swiningest hepcat around baby. Granted you won’t be able to carry
+anything in it, but you will look damn good not doing it! A wonderful feature of this box our patented
+magnetic clasp that really doesn’t work!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+		    <p class="product-price">Price is $299.95</p>
+                </div>
+
+          <div class="product">
+                    <img src="FANBOX.jpg" alt="Box Name 4">
+                    <h3>The Fan Box</h3>
+                    <p>Is it a fan!?! Is it a box!?! Is it neither or is it both!?! We just don’t know! But if you need a constant
+stream of air blowing on something in a box the Fox is the foxiest choice for you!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+		    <p class="product-price">Price is $39.95</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Popular Among Users -->
+        <section class="boxes">
+            <h2>Popular Among Users</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="MagicBox.jpg" alt="Box Name 5">
+                    <h3>The Magic Box</h3>
+                    <p>One of our best sellers! This box will protect all your booty from those pesky pirates!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <p class="product-price">Price is $139.95</p>
+                </div>
+                
+           <div class="product">
+                    <img src="Orange.jpg" alt="Box Name 6">
+                    <h3>The Orange Dream</h3>
+                    <p>A top seller within the box party scene! This box is not only fashionable with its dazzling orange color,
+and it also smells like oranges! Don’t settle for those cheap imitations, get the real deal here, they are
+simply remarkable!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <p class="product-price">Price is $59.95</p>
+                </div>
+
+           <div class="product">
+                    <img src="BlackOut.jpg" alt="Box Name 7">
+                    <h3>The Black Out</h3>
+                    <p>Our sleekest, sexiest box! This baby will get you noticed! Whether you are moving, storing or taking
+your box out on the town for dinner and dancing you will get noticed! It’s guaranteed, because it’s illegal
+in 9 counties and 60% of the time it works every time, oh yeah.</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <p class="product-price">Price is $69.95</p>
+                </div>
+
+           <div class="product">
+                    <img src="ToyBox.jpg" alt="Box Name 8">
+                    <h3>The Toy Box</h3>
+                    <p>Do you miss that toy box you had as a kid, or worse yet, the toy box you never had? Now you can move
+or stuff your junk in something just like the one you had or pined for as a child! Made of a ultra high-
+quality hand polished particle board like substance that will be a real conversation starter!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <p class="product-price">Price is $29.95</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 The Box Company</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const userLoggedIn = false; //should be dynamically set based on actual login status
+            const cartLink = document.getElementById('cartLink');
+            if (userLoggedIn) {
+                cartLink.href = 'shoppingCart.html';
+            } else {
+                cartLink.href = 'login.html';
+            }
+        });
+    </script>
+</body>
+</html>
